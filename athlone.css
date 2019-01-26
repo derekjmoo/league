@@ -37,9 +37,8 @@ div[class*="item"] {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://www.extratime.ie/media/extratime/images/articles/27859750013_ebaebf9bcf_z_5.jpg"); */
 
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("http://www.extratime.ie/media/extratime/images/articles/27859750013_ebaebf9bcf_z_5.jpg"); *
   /* Set a specific height */
   height: 100px;
 
@@ -48,6 +47,9 @@ div[class*="item"] {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Place text in the middle of the image */
