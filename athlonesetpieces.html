@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="backToTop.js"></script>
+    <link rel="stylesheet" href="athlone.css">
+    <link rel="stylesheet" href="athlonesetpieces.css">
+    <link rel="stylesheet" href="backToTop.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+  </head>
+  <body>
+
+
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a href="homepage.html">
+      <span class="glyphicon glyphicon-home"></span>  Home
+    </a>
+    <a class="active" href="athlone.html">Athlone Town</a>
+    <a href="bray.html">Bray Wanderers</a>
+    <a href="cabo.html">Cabinteely</a>
+    <a href="cobh.html">Cobh Ramblers</a>
+    <a href="drogs.html">Drogheda United</a>
+    <a href="galway.html">Galway United</a>
+    <a href="limerick.html">Limerick</a>
+    <a href="shels.html">Shelbourne</a>
+    <a href="wexford.html">Wexford</a>
+  </div>
+
+
+
+<!-- nav bar for mobile -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Bray Wanderers</a></li>
+        <li><a href="#">Cabinteely</a></li>
+        <li><a href="#">Cobh Ramblers</a></li>
+        <li><a href="#">Drogheda United</a></li>
+        <li><a href="#">Galway United</a></li>
+        <li><a href="#">Limerick</a></li>
+        <li><a href="#">Shelbourne</a></li>
+        <li><a href="#">Wexford</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Page content -->
+  <div class="content">
+
+
+    <div class="topSticky">
+      <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">Top^</button>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Athlone Town</h1>
+        </div>
+    </div>
+
+    <div class="sections">
+      <ul class="nav nav-pills nav-justified">
+        <li id="summary" ><a href="athlone.html">Summary</a></li>
+        <li><a href="athlonematches.html">Matches</a></li>
+        <li class="active"><a href="#setpieces">Set Pieces</a></li>
+        <li><a href="#">Formation</a></li>
+        <li><a href="athlonePlayers.html">Players</a></li>
+      </ul>
+    </div>
+
+
+        <div class="hero-image-sp">
+            <div class="hero-text-sp">
+              <h1>Set Pieces</h1>
+            </div>
+              <div class="triangle-down">
+              </div>
+              <div class="hint-text">
+                <p>Select one of the pills below</p>
+              </div>
+
+        </div>
+
+        <div class="setPieceButtons">
+          <a href="#goalkicks"><button type="button">Goal Kicks</button></a>
+          <a href="#defcorn"><button type="button">Defending Corners</button></a>
+          <a href="#attcorn"><button type="button">Attacking Corners</button></a>
+          <a href="#deffree"><button type="button">Defending Free Kicks</button></a>
+          <a href="#attfree"><button type="button">Attacking Free Kicks</button></a>
+          <a href="#throw"><button type="button">Throw-ins</button></a>
+          <a href="#peno"><button type="button">Penalties</button></a>
+        </div>
+
+        <div class="gkSect">
+          <div class="hero-image-gk">
+              <div class="hero-text-gk">
+                <h1 id="goalkicks"><a class="anchor" href="#goalkicks"></a>Goal Kicks</h1>
+              </div>
+          </div>
+
+
+          <div class="row">
+            <div class="column">
+              <h3>Short</h3>
+              <img src="gkShort.jpg">
+
+                  <table class="tableizer-table">
+                  <thead>
+                    <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                  </tr>
+                  <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                  </tr>
+                  <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                  </tr>
+                  <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                  </tr>
+                  <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+
+
+            </div>
+            <div class="column">
+              <h3>Medium</h3>
+              <img src="gkMid.jpg">
+              <table class="tableizer-table">
+              <thead>
+                <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+              </tr>
+              <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+              </tr>
+              <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+              </tr>
+              <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+              </tr>
+              <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+              </tr>
+              </tbody>
+            </table>
+            </div>
+            <div class="column">
+              <h3>Long</h3>
+              <img src="gkLong.jpg">
+
+              <table class="tableizer-table">
+              <thead>
+                <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+              </tr>
+              <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+              </tr>
+              <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+              </tr>
+              <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+              </tr>
+              <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+              </tr>
+              </tbody>
+            </table>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="defCornSect">
+
+          <div class="hero-image-dc">
+              <div class="hero-text-dc">
+                <h1 id="defcorn"><a class="anchor" href="#defcorn"></a>Defending Corners</h1>
+              </div>
+                <div class="triangle-down">
+                </div>
+          </div>
+
+
+
+            <div class="row">
+              <div class="column">
+                <h3>Medium</h3>
+                <img src="gkMid.jpg">
+                <table class="tableizer-table">
+                <thead>
+                  <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </tr>
+                <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                </tr>
+                <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                </tr>
+                <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                </tr>
+                <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+              <div class="column">
+                <h3>Long</h3>
+                <img src="gkLong.jpg">
+
+                <table class="tableizer-table">
+                <thead>
+                  <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                </tr>
+                <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                </tr>
+                <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                </tr>
+                <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                </tr>
+                <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="attCornSect">
+            <div class="hero-image-ac">
+                <div class="hero-text-ac">
+                  <h1 id="attcorn"><a class="anchor" href="#attcorn"></a>Attacking Corners</h1>
+                </div>
+                  <div class="triangle-down">
+                  </div>
+            </div>
+
+
+
+              <div class="row">
+                <div class="column">
+                  <h3>Medium</h3>
+                  <img src="gkMid.jpg">
+                  <table class="tableizer-table">
+                  <thead>
+                    <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                  </tr>
+                  <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                  </tr>
+                  <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                  </tr>
+                  <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                  </tr>
+                  <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                  </tr>
+                  </tbody>
+                </table>
+                </div>
+                <div class="column">
+                  <h3>Long</h3>
+                  <img src="gkLong.jpg">
+
+                  <table class="tableizer-table">
+                  <thead>
+                    <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                  </tr>
+                  <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                  </tr>
+                  <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                  </tr>
+                  <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                  </tr>
+                  <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                  </tr>
+                  </tbody>
+                </table>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="defFreeSect">
+              <div class="hero-image-df">
+                  <div class="hero-text-df">
+                    <h1 id="deffree"><a class="anchor" href="#deffree"></a>Defending Free Kicks</h1>
+                  </div>
+                    <div class="triangle-down">
+                    </div>
+              </div>
+
+
+
+                <div class="row">
+                  <div class="column">
+                    <h3>Medium</h3>
+                    <img src="gkMid.jpg">
+                    <table class="tableizer-table">
+                    <thead>
+                      <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                    </tr>
+                    <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                    </tr>
+                    <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                    </tr>
+                    <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="column">
+                    <h3>Long</h3>
+                    <img src="gkLong.jpg">
+
+                    <table class="tableizer-table">
+                    <thead>
+                      <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                    </tr>
+                    <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                    </tr>
+                    <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                    </tr>
+                    <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  </div>
+
+                </div>
+              </div>
+
+
+            <div class="attFreeSect">
+              <div class="hero-image-af">
+                  <div class="hero-text-af">
+                    <h1 id="attfree"><a class="anchor" href="#attfree"></a>Attacking Free Kicks</h1>
+                  </div>
+                    <div class="triangle-down">
+                    </div>
+              </div>
+
+
+
+                <div class="row">
+                  <div class="column">
+                    <h3>Medium</h3>
+                    <img src="gkMid.jpg">
+                    <table class="tableizer-table">
+                    <thead>
+                      <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                    </tr>
+                    <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                    </tr>
+                    <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                    </tr>
+                    <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="column">
+                    <h3>Long</h3>
+                    <img src="gkLong.jpg">
+
+                    <table class="tableizer-table">
+                    <thead>
+                      <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                    </tr>
+                    <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                    </tr>
+                    <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                    </tr>
+                    <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+              <div class="throwSect">
+                <div class="hero-image-th">
+                    <div class="hero-text-th">
+                      <h1 id="throw"><a class="anchor" href="#throw"></a>Throw Ins</h1>
+                    </div>
+                      <div class="triangle-down">
+                      </div>
+                </div>
+
+
+
+                  <div class="row">
+                    <div class="column">
+                      <h3>Medium</h3>
+                      <img src="gkMid.jpg">
+                      <table class="tableizer-table">
+                      <thead>
+                        <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                      </tr>
+                      <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                      </tr>
+                      <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                      </tr>
+                      <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                      </tr>
+                      <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                    <div class="column">
+                      <h3>Long</h3>
+                      <img src="gkLong.jpg">
+
+                      <table class="tableizer-table">
+                      <thead>
+                        <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                      </tr>
+                      <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                      </tr>
+                      <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                      </tr>
+                      <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                      </tr>
+                      <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="penoSect">
+                  <div class="hero-image-p">
+                      <div class="hero-text-p">
+                        <h1 id="peno"><a class="anchor" href="#peno"></a>Penalties</h1>
+                      </div>
+                        <div class="triangle-down">
+                        </div>
+                  </div>
+
+
+
+                    <div class="row">
+                      <div class="column">
+                        <h3>Medium</h3>
+                        <img src="gkMid.jpg">
+                        <table class="tableizer-table">
+                        <thead>
+                          <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                        </tr>
+                        <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                        </tr>
+                        <tr><td>To Centre Back</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                        </tr>
+                        <tr><td>To Midfield</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <div class="column">
+                        <h3>Long</h3>
+                        <img src="gkLong.jpg">
+
+                        <table class="tableizer-table">
+                        <thead>
+                          <tr class="tableizer-firstrow"><th>Type</th><th>Total</th><th>Left</th><th>Right</th><th>Centre</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>Matches Scouted</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr><td>Short Kickouts</td><td>7</td><td>4</td><td>1</td><td>2</td>
+                        </tr>
+                        <tr><td>To Full Back</td><td>4</td><td>3</td><td>1</td><td>0</td>
+                        </tr>
+                        <tr><td>To Midfield</td><td>2</td><td>1</td><td>0</td><td>1</td>
+                        </tr>
+                        <tr><td>To Forward</td><td>1</td><td>0</td><td>0</td><td>1</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      </div>
+
+                    </div>
+                  </div>
+        </div> <!--end of content div-->
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

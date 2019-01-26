@@ -1,0 +1,27 @@
+.matchesList td:nth-child(2){
+  text-align: right;
+}
+/* Home Score */
+
+.matchesList td:nth-child(3){
+  text-align: right;
+}
+/* Away score? */
+.matchesList td:nth-child(4){
+  text-align: left;
+}
+.matchesList th{
+  text-align: center;
+}
+
+.matchesList th:nth-child(2){
+  text-align: right;
+}
+
+.matchesList th:nth-child(3){
+  width: 10%
+}
+
+.matchesList th:nth-child(4){
+  text-align: left;
+}

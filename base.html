@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="backToTop.js"></script>
+    <link rel="stylesheet" href="athlone.css">
+    <link rel="stylesheet" href="backToTop.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+  </head>
+  <body>
+
+
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a href="homepage.html">
+      <span class="glyphicon glyphicon-home"></span>  Home
+    </a>
+    <a href="Athlone.html">Athlone Town</a>
+    <a href="Bray.html">Bray Wanderers</a>
+    <a href="Cabinteely.html">Cabinteely</a>
+    <a href="Cobh.html">Cobh Ramblers</a>
+    <a href="Drogheda.html">Drogheda United</a>
+    <a href="Galway.html">Galway United</a>
+    <a href="Limerick.html">Limerick</a>
+    <a href="Shelbourne.html">Shelbourne</a>
+    <a href="Wexford.html">Wexford</a>
+  </div>
+
+
+
+<!-- nav bar for mobile -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Athlone Town</a></li>
+        <li><a href="#">Bray Wanderers</a></li>
+        <li><a href="#">Cabinteely</a></li>
+        <li><a href="#">Cobh Ramblers</a></li>
+        <li><a href="#">Drogheda United</a></li>
+        <li><a href="#">Galway United</a></li>
+        <li><a href="#">Limerick</a></li>
+        <li><a href="#">Shelbourne</a></li>
+        <li><a href="#">Wexford</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Page content -->
+  <div class="content">
+
+
+    <div class="topSticky">
+      <button type="button" onclick="topFunction()" id="myBtn" title="Go to top">Top^</button>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1></h1>
+      </div>
+    </div>
+
+    <div class="sections">
+      <ul class="nav nav-pills nav-justified">
+        <li id="summary" class="active"><a class="anchor" href="">Summary</a></li>
+        <li><a href="matches">Matches</a></li>
+        <li><a href="setpieces">Set Pieces</a></li>
+        <li><a href="#">Formation</a></li>
+        <li><a href="players">Players</a></li>
+      </ul>
+    </div>
+
+
+    <div class="summaryContent">
+      <div class="row-sum">
+
+        <div class="column-sum">
+          <h4>General Notes</h4>
+          <p>General Formation: 3-4-3</p>
+          <p>Dangerous from set-pieces</p>
+          <p>Direct style of play</p>
+          <p>Keeper uncomfortable with the ball at his feet</p>
+
+        </div>
+        <div class="column-sum">
+          <h4>Form</h4>
+
+          <iframe id='table' class="deskIf" frameborder="0"  scrolling="no" width="100%" height="320" src="https://www.fctables.com/ireland/1-division/iframe/?type=table&lang_id=2&country=106&template=139&team=&timezone=Europe/Dublin&time=24&po=1&ma=1&wi=1&dr=1&los=1&gf=0&ga=0&gd=0&pts=1&ng=0&form=1&width=500&height=320&font=Verdana&fs=15&lh=24&bg=&fc=ffffff&logo=1&tlink=0&ths=1&thb=1&thba=&thc=ffffff&bc=000000&hob=000000&hobc=000000&lc=333333&sh=0&hfb=1&hbc=ff0000&hfc=FFFFFF">
+          </iframe>
+
+          <iframe class="mobileIfame" frameborder="0"  scrolling="no" width="100%" height="320" src="https://www.fctables.com/ireland/1-division/iframe/?type=table&lang_id=2&country=106&template=139&team=&timezone=Europe/Dublin&time=24&po=1&ma=1&wi=1&dr=1&los=1&gf=0&ga=0&gd=0&pts=1&ng=0&form=1&width=320&height=320&font=Verdana&fs=12&lh=24&bg=&fc=ffffff&logo=1&tlink=0&ths=1&thb=1&thba=&thc=ffffff&bc=000000&hob=000000&hobc=000000&lc=333333&sh=0&hfb=1&hbc=ff0000&hfc=FFFFFF"></iframe><div style="text-align:center;"></div>
+          <div style="text-align:center;"></div>
+
+        </div>
+
+        <div id = "lastMatch" class="column-sum">
+          <h4>Last League Match</h4>
+
+          <iframe id="lmi" frameborder="0"  scrolling="no" width="100%" height="200" src="https://www.fctables.com/teams/athlone-town-180547/iframe/?type=team-last-match&lang_id=2&country=106&template=139&team=&timezone=Europe/Dublin&time=24&width=320&height=200&font=Verdana&fs=12&lh=24&bg=&fc=ffffff&logo=1&tlink=0&scfs=22&scfc=ffffff&scb=1&sclg=0&teamls=60&sh=0&hfb=1&hbc=ff0000&hfc=FFFFFF"></iframe>
+          <div style="text-align:center;"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row-sum">
+
+        <div class="column-sum">
+          <h4>Goals Scored</h4>
+          <table class="tableizer-table">
+          <thead><tr class="tableizer-firstrow"><th>Type</th><th>Home</th><th>Away</th><th>Total</th></tr></thead>
+            <tbody>
+             <tr id = "openPlay">
+               <td>Open Play</td><td>6</td><td>5</td><td>11</td>
+             </tr>
+             <tr><td>Inside Box</td><td>3</td><td>2</td><td>5</td></tr>
+             <tr><td>Outside Box</td><td>2</td><td>3</td><td>5</td></tr>
+             <tr><td>Own Goal</td><td>1</td><td>0</td><td>1</td></tr>
+             <tr id = "setPieceGoal"><td>Set Piece</td><td>4</td><td>2</td><td>6</td></tr>
+             <tr><td>Free kick</td><td>2</td><td>1</td><td>3</td></tr>
+             <tr><td>Corner</td><td>1</td><td>1</td><td>2</td></tr>
+             <tr><td>Penalty</td><td>1</td><td>0</td><td>1</td></tr>
+             <tr id="total">
+               <td>Total</td><td>10</td><td>7</td><td>17</td>
+             </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="column-sum">
+          <h4>Goals Conceded</h4>
+          <table class="tableizer-table">
+          <thead><tr class="tableizer-firstrow"><th>Type</th><th>Home</th><th>Away</th><th>Total</th></tr></thead>
+            <tbody>
+             <tr id = "openPlay">
+               <td>Open Play</td><td>6</td><td>5</td><td>11</td>
+             </tr>
+             <tr><td>Inside Box</td><td>3</td><td>2</td><td>5</td></tr>
+             <tr><td>Outside Box</td><td>2</td><td>3</td><td>5</td></tr>
+             <tr><td>Own Goal</td><td>1</td><td>0</td><td>1</td></tr>
+             <tr id = "setPieceGoal"><td>Set Piece</td><td>4</td><td>2</td><td>6</td></tr>
+             <tr><td>Free kick</td><td>2</td><td>1</td><td>3</td></tr>
+             <tr><td>Corner</td><td>1</td><td>1</td><td>2</td></tr>
+             <tr><td>Penalty</td><td>1</td><td>0</td><td>1</td></tr>
+             <tr id="total">
+               <td>Total</td><td>10</td><td>7</td><td>17</td>
+             </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="column-sum">
+            <h4>Top Scorers</h4>
+            <div class="grid-containerz-ts">
+              <div id = "player" class="item1">Player</div>
+              <div class="item2">Goals</div>
+              <div class="item3">John Smith</div>
+              <div class="item4">3</div>
+              <div class="item5">John Smith</div>
+              <div class="item6">2</div>
+              <div class="item5">John Smith</div>
+              <div class="item6">1</div>
+          </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+      <script type="text/javascript" src="base.js"></script>
+
+      <script type="text/javascript" src="backToTop.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.backToTopClass{
+  width: 100%;
+}
+
+
+.topSticky{
+  position: fixed;
+  bottom: 10px;
+  z-index: 25;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.topSticky button{
+  float: right;
+  right: 15%;
+  opacity: 0.7;
+  border: none;
+  background-color: #B71C1C;
+  color: #fff;
+  font-size: 14px;
+  line-height: 35px;
+  width: 127px;
+  border-radius: 100px;
+  pointer-events: auto;
+  position: relative;
+  display: inline-block;
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .topSticky button{
+    float: right;
+    right: 33%;
+  }

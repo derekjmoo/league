@@ -1,0 +1,90 @@
+* {
+  font-family: Verdana;
+  font-size: 15px;
+}
+
+body{
+  background-image: linear-gradient(to right, rgba(183,28,28,0.1), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 18px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #B71C1C;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 15%;
+  height: 100vh;
+}
+
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.footballgroundguide.com/images/image/product/property/longford-town-fc-city-calling-stadium-main-stand-1424623845.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .content{
+    display: none;
+  }
+}
